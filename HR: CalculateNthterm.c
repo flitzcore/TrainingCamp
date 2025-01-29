@@ -7,22 +7,24 @@
 int find_nth_term(int n, int a, int b, int c)
 {
     // Write your code here.
+    int result;
     if (n > 3)
     {
-        return find_nth_term(n - 1, a, b, c) + find_nth_term(n - 2, a, b, c) + find_nth_term(n - 3, a, b, c);
+        result = find_nth_term(n - 1, a, b, c) + find_nth_term(n - 2, a, b, c) + find_nth_term(n - 3, a, b, c);
     }
     else if (n == 1)
     {
-        return a;
+        result = a;
     }
     else if (n == 2)
     {
-        return b;
+        result = b;
     }
     else if (n == 3)
     {
-        return c;
+        result = c;
     }
+    return result;
 }
 
 int main()

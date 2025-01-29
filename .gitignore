@@ -1,3 +1,53 @@
-/build
-/calculatenterm
-/helloworld
+# Ignore build directories
+/build/
+/bin/
+/out/
+/Debug/
+/Release/
+/dist/
+/obj/
+/CMakeFiles/
+CMakeCache.txt
+compile_commands.json
+
+# Ignore compiled binaries and executables
+*.exe
+*.out
+*.o
+*.obj
+*.so
+*.a
+*.lib
+*.dll
+*.dylib
+
+# Ignore temporary and log files
+*.log
+*.tmp
+*.swp
+*.swo
+*.bak
+*.pid
+
+# Ignore IDE and editor-specific files
+.vscode/
+*.code-workspace
+*.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Ignore dependency manager files
+Makefile.in
+autom4te.cache/
+config.status
+config.log
+CMakeFiles/
+CMakeCache.txt
+
+# Ignore generated documentation
+/docs/doxygen/
+*.dox
+
+# Ignore personal or system-specific files
+*.DS_Store
+Thumbs.db
